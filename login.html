@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+<title>登录页面</title>
+<link href="css/login.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/login.js" ></script>
+</head>
+<body>
+	<div class="big">
+		<div class="big-di">
+			<div class="big-di-one">
+				<span>密码登录</span>
+			</div>
+			<div class="big-di-two">
+				<span>注册/登录</span>
+			</div>
+		</div>
+		<div class="first">
+			<div class="first-one">
+				<span class="use">&nbsp;</span>
+				<input name="username" type="text" class="username" placeholder="请输入手机号"/>
+			</div>
+			<div class="first-two">
+				<span class="pwd">&nbsp;</span>
+				<input name="password" type="password" class="password" placeholder="请输入密码"/>
+			</div>
+			<p class="p-a">
+				<a href="http://localhost:8080/retrievePassword" class="retrievePassword">找回密码</a>
+			</p>
+		</div>
+		<div class="third">
+			<input name="number" type="text" class="number" id="number" placeholder="请输入手机号"/>
+			<div>
+				<input name="verification" type="text" onblur="ver();" id="verification" class="verification" placeholder="请输入验证码"/>
+				<input type="button" id="third-bnt" onclick="but()" value="发送验证码"/>
+			</div>
+		</div>
+		<div class="second">
+			<button type="submit" disabled="disabled" id="second-butt">
+				<span id="second-sp">登录</span>
+			</button>
+		</div>
+	</div>
+</body>
+</html>
